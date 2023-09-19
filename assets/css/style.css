@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --green: #007F31;
+    --gray: #CACACA;
+    --red: #C91210;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+}
+
+h1 {
+    font-size: 64px;
+    color: white;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1105px;
+    margin: 0 auto;
+}
+
+
+/*Header*/
+
+header {
+    display: flex;
+}
+
+.page-header {
+    display: flex;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header a {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--green);
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+/*Home*/
+
+.home {
+    display: flex;
+    background: url("../img/back.png");
+}
+
+.page-home {
+    display: flex;
+    flex-direction: column;
+    padding: 90px 0;
+}
+
+.home span {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    width: 60%;
+    line-height: 139.7%;
+    padding: 30px 0 70px 0;
+}
+
+.home button {
+    width: 212px;
+    height: 48px;
+    border-radius: 2px;
+    border: 2px solid #FFF;
+    background: rgba(0, 127, 49, 0.28);
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/*History*/
+
+.history {
+    display: flex;
+}
+
+.page-history {
+    display: flex;
+    justify-content: space-between;
+    margin: 64px 0 90px 0;
+    padding: 110px 130px 155px 130px;
+    box-shadow: 0 0 30px 6px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.page-history p {
+    width: 57%;
+    font-size: 16px;
+    line-height: 213%;
+}
+
+.page-history img {
+    position: absolute;
+    top: -45px;
+    right: 100px;
+}
+
+/*Product*/
+
+.product {
+    display: flex;
+}
+
+.page-product {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.block-product {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+}
+
+.left {
+    width: 35%;
+    padding-top: 65px;
+}
+
+.right {
+    width: 34%;
+    padding-top: 90px;
+}
+
+.left span {
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.left p {
+    font-size: 16px;
+    line-height: 213%;
+    border-top: 1px solid var(--red);
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.left h4 {
+    padding-top: 5px;
+}
+
+.block-compound {
+    display: flex;
+    justify-content: space-between;
+}
+
+.compound {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid var(--red)
+}
+
+.block-compound span {
+    font-size: 14px;
+}
+
+.right h4 {
+    padding-bottom: 25px;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 40px 0 15px 0;
+}
+
+.right p {
+    font-size: 16px;
+    line-height: 213%;
+    width: 95%;
+}
+
+/*Reviews*/
+
+.reviews {
+    display: flex;
+}
+
+.page-reviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-reviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-reviews span {
+    font-size: 20px;
+    color: var(--gray);
+}
+
+.title-reviews h2 {
+    color: var(--red);
+    font-weight: 500;
+}
+
+.block-reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 40px 0 140px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 13px 2px rgba(78, 78, 78, 0.12);
+    padding: 45px 60px;
+    height: 270px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+}
+
+.big {
+    width: 745px;
+}
+
+.small {
+    width: 335px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rtb {
+    width: 60%;
+}
+
+.rtb:last-child {
+    width: 63%;
+}
+
+.block-reviews p {
+    font-size: 16px;
+    line-height: 174.143%;
+    padding-top: 12px;
+}
+
+.number {
+    color: var(--red);
+    font-weight: 600;
+    padding-right: 30px;
+}
+
+.rts {
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+}
+
+.page-feedback {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feedback {
+    display: flex;
+}
+
+.feedback-title {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 55px;
+}
+
+.feedback-title span {
+    font-size: 20px;
+    color: var(--gray);
+}
+
+.feedback-title h2 {
+    color: var(--green);
+    font-weight: 500;
+}
+
+.feedback input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 32px;
+}
+
+.feedback input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    height: 100px;
+    margin: 32px 0 47px 0;
+}
+
+.agree {
+    display: flex;
+    align-items: center;
+}
+
+.agree label {
+    width: 90%;
+    padding: 0 0 35px 15px;
+}
+
+.agree input {
+    width: 10%;
+    height: 20px;
+    width: 20px;
+    margin: 0 0 35px 0;
+    padding: 0 0;
+}
+
+.feedback input[type=submit] {
+    border-radius: 2px;
+    border: 1px solid #000;
+    font-size: 16px;
+    padding: 0 0;
+    width: 100%;
+    height: 48px;
+    background: none;
+    margin-bottom: 127px;
+}
+
+/*Footer*/
+
+footer {
+    display: flex;
+    background: #373737;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 66px 0;
+    flex-wrap: wrap;
+}
+
+.doc {
+    display: flex;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer li {
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+.title-footer {
+    font-size: 20px;
+}
+
+.line {
+    width: 252px;
+    border-top: 1px solid white;
+    padding-top: 16px;
+}
+
+.ul-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
